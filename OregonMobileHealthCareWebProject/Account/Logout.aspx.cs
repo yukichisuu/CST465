@@ -12,9 +12,17 @@ namespace OregonMobileHealthCareWebProject.Account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
+        protected void Page_Init (object sender, EventArgs e)
+        {
+            if(User.Identity.IsAuthenticated )
+            {
+                FormsAuthentication.SignOut();
+                Response.Redirect(Request.Url.ToString());
+            }
+        }
         protected void uxLogout_Click(object sender, EventArgs e)
         {
             FormsAuthentication.SignOut();

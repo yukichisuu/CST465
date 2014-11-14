@@ -14,8 +14,14 @@
     <div>
         <asp:ContentPlaceHolder ID="SiteMap" runat="server">
             <asp:SiteMapDataSource ID="uxSiteMap" StartingNodeUrl="~/Default.aspx" ShowStartingNode="false" runat="server" />
-            <asp:Menu ID="uxMenu" DataSourceID="uxSiteMap" runat="server" />
-            <asp:SiteMapPath PathSeparator="->" runat="server" />
+            <asp:Menu ID="uxMenu" DataSourceID="uxSiteMap" Orientation="Horizontal" runat="server" >
+                <StaticMenuItemStyle ForeColor="White" BackColor="SkyBlue" BorderColor="Red" BorderWidth="1px" Font-Bold="true" />
+                <StaticHoverStyle ForeColor="White" BackColor="SkyBlue" BorderColor="Red" BorderWidth="1px" />
+                <DynamicHoverStyle ForeColor="White" BackColor="SkyBlue" BorderColor="Red" BorderWidth="1px" />
+                <DynamicMenuItemStyle ForeColor="White" BackColor="SkyBlue" BorderColor="Red" BorderWidth="1px" />
+            </asp:Menu>
+            <br />
+            <asp:SiteMapPath PathSeparator="->" ForeColor="White" BackColor="SkyBlue" BorderColor="Red" BorderWidth="1px" runat="server" />
         </asp:ContentPlaceHolder>
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

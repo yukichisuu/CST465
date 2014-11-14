@@ -62,6 +62,7 @@
     <Content Include="Account\DetailedRegistration.aspx" />
     <Content Include="Account\Logout.aspx" />
     <Content Include="Forum.aspx" />
+    <Content Include="jillsandwich.jpg" />
     <Content Include="MasterPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
