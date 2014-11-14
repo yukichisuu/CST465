@@ -10,7 +10,7 @@
 namespace OregonMobileHealthCareWebProject.Account {
     
     
-    public partial class Register_v2 {
+    public partial class DetailedRegistration {
         
         /// <summary>
         /// RegisterValidationSummary control.

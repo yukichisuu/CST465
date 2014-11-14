@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Account\Account.aspx" />
+    <Content Include="Account\DetailedRegistration.aspx" />
     <Content Include="Account\Logout.aspx" />
     <Content Include="Forum.aspx" />
     <Content Include="MasterPage.Master" />
@@ -68,10 +69,11 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Victim.aspx" />
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="Account\Register_v2.aspx" />
     <Content Include="Security\Login.aspx" />
     <Content Include="Security\Register.aspx" />
     <Content Include="Tests.aspx" />
@@ -94,6 +96,13 @@
     <Compile Include="Account\Account.aspx.designer.cs">
       <DependentUpon>Account.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Account\DetailedRegistration.aspx.cs">
+      <DependentUpon>DetailedRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\DetailedRegistration.aspx.designer.cs">
+      <DependentUpon>DetailedRegistration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -114,13 +123,6 @@
     </Compile>
     <Compile Include="Forum.aspx.designer.cs">
       <DependentUpon>Forum.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Register_v2.aspx.cs">
-      <DependentUpon>Register_v2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Register_v2.aspx.designer.cs">
-      <DependentUpon>Register_v2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Security\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -159,6 +161,13 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Victim.aspx.cs">
+      <DependentUpon>Victim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Victim.aspx.designer.cs">
+      <DependentUpon>Victim.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

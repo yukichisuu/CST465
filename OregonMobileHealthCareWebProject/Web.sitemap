@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="Home"  description="The Home Page">
+    <siteMapNode url="~/Security/Login.aspx" title="Login Page" description="Login To The Site">
+      <siteMapNode url="~/Security/Register.aspx" title="Registration" description="Registration Page" />
+    </siteMapNode>
+
+    <siteMapNode url="~/Account/Account.aspx" title="Account Page" description="Account Page For User">
+      <siteMapNode url="~/Account/DetailedRegistration.aspx" title="Detailed Registration" description="Registration Page With More Options" />
+      <siteMapNode url="~/Account/ViewRegistrationData.aspx" title="View Registration" description="View Registration Data" />
+      <siteMapNode url="~/Account/Logout.aspx" title="Logout" description="Logout Of Site" />
+    </siteMapNode>
+
+    <siteMapNode url="~/Forum.aspx" title="Forum" description="Forum">
+    </siteMapNode>
+
+    <siteMapNode url="~/Tests.aspx" title="Tests" description="Tests">
+    </siteMapNode>
+
+    <siteMapNode url="~/About.aspx" title="About" description="About">
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
