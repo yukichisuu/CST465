@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Account.aspx" />
+    <Content Include="Account\Logout.aspx" />
+    <Content Include="Forum.aspx" />
     <Content Include="MasterPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -67,14 +71,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="Register_v2.aspx" />
+    <Content Include="Account\Register_v2.aspx" />
     <Content Include="Security\Login.aspx" />
     <Content Include="Security\Register.aspx" />
-    <Content Include="ViewRegistrationData.aspx" />
+    <Content Include="Tests.aspx" />
+    <Content Include="Account\ViewRegistrationData.aspx" />
     <Content Include="MainStyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -82,11 +108,18 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Register_v2.aspx.cs">
+    <Compile Include="Forum.aspx.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum.aspx.designer.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register_v2.aspx.cs">
       <DependentUpon>Register_v2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Register_v2.aspx.designer.cs">
+    <Compile Include="Account\Register_v2.aspx.designer.cs">
       <DependentUpon>Register_v2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Security\Login.aspx.cs">
@@ -103,11 +136,18 @@
     <Compile Include="Security\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewRegistrationData.aspx.cs">
+    <Compile Include="Tests.aspx.cs">
+      <DependentUpon>Tests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests.aspx.designer.cs">
+      <DependentUpon>Tests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ViewRegistrationData.aspx.cs">
       <DependentUpon>ViewRegistrationData.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewRegistrationData.aspx.designer.cs">
+    <Compile Include="Account\ViewRegistrationData.aspx.designer.cs">
       <DependentUpon>ViewRegistrationData.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\RegistrationData.cs" />
