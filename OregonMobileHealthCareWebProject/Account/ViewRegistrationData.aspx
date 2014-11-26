@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ViewRegistrationData.aspx.cs" Inherits="OregonMobileHealthCareWebProject.App_Code.ViewRegistrationData" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ViewRegistrationData.aspx.cs" Inherits="OregonMobileHealthCareWebProject.Account.ViewRegistrationData" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">

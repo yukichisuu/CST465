@@ -40,5 +40,36 @@ namespace OregonMobileHealthCareWebProject.Account
                 insert.Connection.Close();
             }
         }
+
+        public void LoadProfile(string userid, RegistrationData data)
+        {
+            SqlCommand select = new SqlCommand();
+            select.Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["HsuDB"].ConnectionString);
+            select.CommandType = CommandType.Text;
+            select.CommandText = "Select * FROM UserProfile WHERE UserID = @UserID;";
+            select.Parameters.AddWithValue("@UserID", userid);
+            try
+            {
+                select.Connection.Open();
+                SqlDataReader reader = select.ExecuteReader();
+                while (reader.Read())
+                {
+                    data.UserName = (string)reader["UserName"];
+                    data.FirstName = (string)reader["FirstName"];
+                    data.LastName = (string)reader["LastName"];
+                    data.Gender = (string)reader["Gender"];
+                    data.Password = (string)reader["Password"];
+                    data.EmailAddress = (string)reader["EmailAddress"];
+                }
+            }
+            catch (Exception ex)
+            {
+                errormessage = ex.Message;
+            }
+            finally
+            {
+                select.Connection.Close();
+            }
+        }
     }
 }

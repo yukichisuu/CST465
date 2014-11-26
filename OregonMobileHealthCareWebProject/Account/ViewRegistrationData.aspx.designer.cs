@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OregonMobileHealthCareWebProject.App_Code {
+namespace OregonMobileHealthCareWebProject.Account {
     
     
     public partial class ViewRegistrationData {
