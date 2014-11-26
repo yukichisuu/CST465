@@ -19,5 +19,8 @@
 
     <siteMapNode url="~/About.aspx" title="About" description="About">
     </siteMapNode>
+
+    <siteMapNode url="~/Admin/ManageUsers.aspx" title="Manage Users" description="Manage Users">
+    </siteMapNode>
   </siteMapNode>
 </siteMap>

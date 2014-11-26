@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security;
 
 namespace OregonMobileHealthCareWebProject.Account
 {
@@ -52,12 +53,15 @@ namespace OregonMobileHealthCareWebProject.Account
             savedata.Password = uxPassword.Text;
             savedata.EmailAddress = uxEmail.Text;
 
-            Session["UserName"] = savedata.UserName;
-            Session["FirstName"] = savedata.FirstName;
-            Session["LastName"] = savedata.LastName;
-            Session["Gender"] = savedata.Gender;
-            Session["Password"] = savedata.Password;
-            Session["EmailAddress"] = savedata.EmailAddress;
+            //Session["UserName"] = savedata.UserName;
+            //Session["FirstName"] = savedata.FirstName;
+            //Session["LastName"] = savedata.LastName;
+            //Session["Gender"] = savedata.Gender;
+            //Session["Password"] = savedata.Password;
+            //Session["EmailAddress"] = savedata.EmailAddress;
+
+            ProfilePersistance profile = new ProfilePersistance();
+            profile.SaveProfile(Membership.GetUser().ProviderUserKey.ToString(), savedata);
 
             Response.Redirect("ViewRegistrationData.aspx");
         }
