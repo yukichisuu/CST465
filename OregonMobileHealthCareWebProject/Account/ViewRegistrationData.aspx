@@ -6,7 +6,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Your submitted information: </h2>
+    <h1>Your submitted information: </h1>
     <span class="DisplaySpan">User Name: </span>
     <asp:Literal ID ="uxUserName" runat="server" />
     <br />

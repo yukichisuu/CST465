@@ -3,10 +3,8 @@
     <title>Detailed Registration</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>Register new user.</h2>
+    <h1>Register new user.</h1>
     <br />
-
-    <%--<asp:CreateUserWizard MembershipProvider="SqlMembership" runat="server" />--%>
 
     <asp:ValidationSummary ID="RegisterValidationSummary" HeaderText="Please correct the following: <br />" ValidationGroup="RegisterValidationGroup" runat="server" />
     <asp:Label ID="RegisterFormLabel" Text="Enter the following information: " runat="server" />

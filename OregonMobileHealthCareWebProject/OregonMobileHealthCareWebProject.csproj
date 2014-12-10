@@ -62,8 +62,12 @@
     <Content Include="Account\DetailedRegistration.aspx" />
     <Content Include="Account\Logout.aspx" />
     <Content Include="Admin\ManageUsers.aspx" />
+    <Content Include="ajax.gif" />
+    <Content Include="Announcements.aspx" />
+    <Content Include="StyleSheets\AnnouncementStyleSheet.css" />
     <Content Include="Forum.aspx" />
     <Content Include="jillsandwich.jpg" />
+    <Content Include="jquery-2.1.1.min.js" />
     <Content Include="MasterPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -73,6 +77,7 @@
     </None>
     <Content Include="Services\ServiceManager.aspx" />
     <Content Include="Services\ViewServices.aspx" />
+    <Content Include="Test.aspx" />
     <Content Include="Victim.aspx" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
@@ -82,7 +87,7 @@
     <Content Include="Security\Register.aspx" />
     <Content Include="Tests.aspx" />
     <Content Include="Account\ViewRegistrationData.aspx" />
-    <Content Include="MainStyleSheet.css" />
+    <Content Include="StyleSheets\MainStyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +126,13 @@
     </Compile>
     <Compile Include="Admin\ManageUsers.aspx.designer.cs">
       <DependentUpon>ManageUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Announcements.aspx.cs">
+      <DependentUpon>Announcements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Announcements.aspx.designer.cs">
+      <DependentUpon>Announcements.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -163,6 +175,13 @@
     </Compile>
     <Compile Include="Services\ViewServices.aspx.designer.cs">
       <DependentUpon>ViewServices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tests.aspx.cs">
       <DependentUpon>Tests.aspx</DependentUpon>

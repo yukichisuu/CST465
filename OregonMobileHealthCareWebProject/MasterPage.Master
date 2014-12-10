@@ -7,6 +7,10 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
         
     </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
+        <link rel="stylesheet" href="/StyleSheets/MainStyleSheet.css" type="text/css" />
+    </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -22,6 +26,12 @@
             <br />
             <asp:SiteMapPath PathSeparator="->" ForeColor="White" BackColor="SkyBlue" BorderColor="Red" BorderWidth="1px" runat="server" />
         </asp:ContentPlaceHolder>
+
+        <asp:ScriptManager ID="uxScriptManager" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/jquery-2.1.1.min.js" />
+            </Scripts>
+        </asp:ScriptManager>
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             
