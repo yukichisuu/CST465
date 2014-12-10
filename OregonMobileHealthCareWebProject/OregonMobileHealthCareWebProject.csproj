@@ -71,6 +71,8 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Services\ServiceManager.aspx" />
+    <Content Include="Services\ViewServices.aspx" />
     <Content Include="Victim.aspx" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
@@ -147,6 +149,20 @@
     </Compile>
     <Compile Include="Security\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ServiceManager.aspx.cs">
+      <DependentUpon>ServiceManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\ServiceManager.aspx.designer.cs">
+      <DependentUpon>ServiceManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ViewServices.aspx.cs">
+      <DependentUpon>ViewServices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\ViewServices.aspx.designer.cs">
+      <DependentUpon>ViewServices.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tests.aspx.cs">
       <DependentUpon>Tests.aspx</DependentUpon>

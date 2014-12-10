@@ -11,6 +11,10 @@
       <siteMapNode url="~/Account/Logout.aspx" title="Logout" description="Logout Of Site" />
     </siteMapNode>
 
+    <siteMapNode url="~/Services/ViewServices.aspx" title="View Services" description="View Our Services">
+      <siteMapNode url="~/Services/ServiceManager.aspx" title="Manage Services" description="Manage Services" />
+    </siteMapNode>
+
     <siteMapNode url="~/Forum.aspx" title="Forum" description="Forum">
     </siteMapNode>
 
